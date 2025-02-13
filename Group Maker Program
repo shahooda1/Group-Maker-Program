@@ -7,6 +7,10 @@ groupsWork = False
 students = ["Shahood", "Ryan", "Marcos", "Aidan", "Jaiden", "Gavin", "Muntag", "Nate", "Leo", "Mason",
             "ChrisH", "Abraham", "Martins", "Wes", "Andrew", "Caleb", "Alex", "ChrisD", "Tyler", "Brandon"]
 
+
+print(students)
+print()
+
 # Empty groups
 group1 = []
 group2 = []
@@ -27,7 +31,9 @@ exclusion3 = None
 exclusion4 = None
 
 # Getting user input
-groupSize = int(input("Would you like groups of 2, 3, or 4? "))
+
+while True:
+  groupSize = int(input("Would you like groups of 2, 3, or 4? "))
 
 exclusion1YN = None
 exclusion2YN = None
