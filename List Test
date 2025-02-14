@@ -1,0 +1,12 @@
+import random
+
+students = ["a", "b", "c", "d", "e", "f", "g"]
+
+random.shuffle(students)
+
+if students.index("a") > students.index("c"):
+    distance = students.index("a") - students.index("c")
+elif students.index("c") > students.index("a"):
+    distance = students.index("c") - students.index("a")
+
+print(distance)
