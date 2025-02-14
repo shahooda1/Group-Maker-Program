@@ -171,16 +171,16 @@ while gameOver == False:
         group9 = [students[16], students[17]]
         group10 = [students[18], students[19]]
 
-        print(group1)
-        print(group2)
-        print(group3)
-        print(group4)
-        print(group5)
-        print(group6)
-        print(group7)
-        print(group8)
-        print(group9)
-        print(group10)
+        print("Group 1 is: " + group1[0] + " and " + group1[1])
+        print("Group 2 is: " + group2[0] + " and " + group2[1])
+        print("Group 3 is: " + group3[0] + " and " + group3[1])
+        print("Group 4 is: " + group4[0] + " and " + group4[1])
+        print("Group 5 is: " + group5[0] + " and " + group5[1])
+        print("Group 6 is: " + group6[0] + " and " + group6[1])
+        print("Group 7 is: " + group7[0] + " and " + group7[1])
+        print("Group 8 is: " + group8[0] + " and " + group8[1])
+        print("Group 9 is: " + group9[0] + " and " + group9[1])
+        print("Group 10 is: " + group10[0] + " and " + group10[1])
 
     elif groupSize == 3:
         group1 = [students[0], students[1], students[2]]
@@ -190,12 +190,12 @@ while gameOver == False:
         group5 = [students[12], students[13], students[14], students[15]]
         group6 = [students[16], students[17], students[18], students[19]]
 
-        print(group1)
-        print(group2)
-        print(group3)
-        print(group4)
-        print(group5)
-        print(group6)
+        print("Group 1 is: " + group1[0] + ", " + group1[1] + ", and " + group1[2])
+        print("Group 2 is: " + group2[0] + ", " + group2[1] + ", and " + group2[2]) 
+        print("Group 3 is: " + group3[0] + ", " + group3[1] + ", and " + group3[2])
+        print("Group 4 is: " + group4[0] + ", " + group4[1] + ", and " + group4[2])
+        print("Group 5 is: " + group5[0] + ", " + group5[1] + ", " + group5[2] + ", and " + group5[3])
+        print("Group 6 is: " + group6[0] + ", " + group6[1] + ", " + group6[2] + ", and " + group6[3])
 
     elif groupSize == 4:
         group1 = [students[0], students[1], students[2], students[3]]
@@ -204,11 +204,11 @@ while gameOver == False:
         group4 = [students[12], students[13], students[14], students[15]]
         group5 = [students[16], students[17], students[18], students[19]]
 
-        print(group1)
-        print(group2)
-        print(group3)
-        print(group4)
-        print(group5)
+        print("Group 1 is: " + group1[0] + ", " + group1[1] + ", " + group1[2] + ", and " + group1[3])
+        print("Group 2 is: " + group5[0] + ", " + group2[1] + ", " + group2[2] + ", and " + group2[3])
+        print("Group 3 is: " + group3[0] + ", " + group3[1] + ", " + group3[2] + ", and " + group3[3])
+        print("Group 4 is: " + group4[0] + ", " + group4[1] + ", " + group4[2] + ", and " + group4[3])
+        print("Group 5 is: " + group5[0] + ", " + group5[1] + ", " + group5[2] + ", and " + group5[3])
 
 #asking if the user wants to run the program again
     gameOverYN = input("Would you like to run the program again? Y / N")
