@@ -14,6 +14,7 @@ while gameOver == False:
     students = ["Shahood", "Ryan", "Marcos", "Aidan", "Jaiden", "Gavin", "Muntag", "Nate", "Leo", "Mason",
                 "ChrisH", "Abraham", "Martins", "Wes", "Andrew", "Caleb", "Alex", "ChrisD", "Tyler", "Brandon"]
 
+    print("Here is a list of the students: ")
     print(students)
     print()
 
@@ -42,8 +43,6 @@ while gameOver == False:
     # Getting user input
 
     groupSize = None
-
-    
 
     while True:
         groupSize = int(input("Would you like groups of 2, 3, or 4? "))
@@ -127,18 +126,35 @@ while gameOver == False:
     elif exclusion1YN.upper() == "N":
         groupsWork = True
 
-    
-
+# loop for making sure exclusions don't end up in the same group
 
     while groupsWork == False:
-        if students.index(exclusion1) == students.index(exclusion2) - 1 or students.index(exclusion2) == students.index(exclusion1) - 1:
-            random.shuffle(students)
-            continue
 
-        if exclusion2YN.upper() == "Y":
-            if students.index(exclusion3) == students.index(exclusion4) - 1 or students.index(exclusion4) == students.index(exclusion3) - 1:
+        if students.index(exclusion1) > students.index(exclusion2):
+            distance1 = students.index(exclusion1) - students.index(exclusion2)
+        elif students.index(exclusion1) < students.index(exclusion2):
+            distance1 = students.index(exclusion2) - students.index(exclusion1)
+
+        while True:
+            if distance1 < 4:
                 random.shuffle(students)
                 continue
+            else:
+                break
+
+        if exclusion2YN.upper() == "Y":
+            if students.index(exclusion3) > students.index(exclusion4):
+                distance2 = students.index(exclusion3) - students.index(exclusion4)
+            elif students.index(exclusion3) < students.index(exclusion4):
+                distance2 = students.index(exclusion4) - students.index(exclusion3)
+
+            while True:
+                if distance2 < 4:
+                    random.shuffle(students)
+                    continue
+                else:
+                    break
+                
 
         groupsWork = True
 
@@ -194,8 +210,10 @@ while gameOver == False:
         print(group4)
         print(group5)
 
+#asking if the user wants to run the program again
     gameOverYN = input("Would you like to run the program again? Y / N")
     gameOverYN = gameOverYN.upper()
+
 
     while True:
         if gameOverYN == "Y":
