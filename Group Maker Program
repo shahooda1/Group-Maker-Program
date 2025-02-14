@@ -220,6 +220,7 @@ while gameOver == False:
             break
         elif exclusion1YN == "N":
             gameOver = True
+            print("Bye.")
             break
         else:
             print("Please enter 'Y' or 'N'")
